@@ -1,0 +1,16 @@
+-- ProbablyEngine Rotation Packager
+-- Custom Discipline Priest Rotation
+-- Created on Nov 20th 2013 8:50 pm
+ProbablyEngine.rotation.register_custom(256, "Discipline[Shadow]", {
+
+  -- =======================================
+  --          Your Rotation Here!
+  -- =======================================
+  -- Everything between the first set of { }
+  -- in the core rotations can go here
+  -- =======================================
+  -- If you have any questions, please ask
+  -- on the ProbablyEngine Forums!
+  -- =======================================
+
+})
