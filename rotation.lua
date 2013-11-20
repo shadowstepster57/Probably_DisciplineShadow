@@ -53,7 +53,7 @@ ProbablyEngine.rotation.register_custom(256, "Discipline[Shadow]", {
 	--Archangel
 	{ "81700", "player.buff(81661).stacks = 5" },
 	--Prayer of Mending
-	{ "33076", "!tank.buff(41635", "tank" },
+	{ "33076", "!tank.buff(41635)", "tank" },
 	--Renew if weakened soul and no shield
 	{ "139", {
 		"lowest.health < 80",
