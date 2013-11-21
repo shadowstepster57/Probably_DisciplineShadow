@@ -42,12 +42,14 @@ ProbablyEngine.rotation.register_custom(256, "Discipline[Shadow]", {
 		"lowest.health < 75",
 		"!lowest.debuff(6788)"
 	}, "lowest" },
+	--Penance Atonement
+	{ "47540", "lowest.health < 90", "target" },
 	--Penance
 	{ "47540", "lowest.health < 75", "lowest" },
 	--Flash Heal
 	{ "2061", "lowest.health < 40", "lowest" },
 	--Greater Heal
-	{ "2060", "lowest.health < 60", "lowest" },
+	--{ "2060", "lowest.health < 60", "lowest" },
 	--PW:S Myself
 	{ "17", "!player.debuff(6788)", "player" },
 	--Archangel
@@ -61,12 +63,10 @@ ProbablyEngine.rotation.register_custom(256, "Discipline[Shadow]", {
 		"!lowest.buff(139)",
 		"!lowest.buff(17)"
 	}, "lowest" },
-	--Penance Atonement
-	{ "47540", "lowest.health < 90" },
 	--Holy Fire / Solace
-	{ "14914", "lowest.health < 95" },
-	{ "129250", "lowest.health < 95" },
+	{ "14914", "lowest.health < 95", "target"},
+	{ "129250", "lowest.health < 95", "target" },
 	--Smite
-	{ "585", "lowest.health < 95" },
+	{ "585", "lowest.health < 100", "target" },
 	{ "2050", "lowest.health < 95", "lowest" },
 })
