@@ -76,6 +76,6 @@ ProbablyEngine.rotation.register_custom(256, "Discipline[Shadow]", {
 	--Holy Fire
 	{ "14914", "lowest.health < 95", "target"},
 	--Smite
-	{ "585", "lowest.health < 100", "target" },
+	{ "585", "player.mana > 50", "target" },
 	{ "2050", "lowest.health < 95", "lowest" },
 })
