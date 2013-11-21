@@ -42,14 +42,24 @@ ProbablyEngine.rotation.register_custom(256, "Discipline[Shadow]", {
 		"lowest.health < 75",
 		"!lowest.debuff(6788)"
 	}, "lowest" },
+	--Power Word: Solace
+	{ "129250", "lowest.health < 100", "target" },
 	--Penance Atonement
 	{ "47540", "lowest.health < 90", "target" },
 	--Penance
 	{ "47540", "lowest.health < 75", "lowest" },
 	--Flash Heal
-	{ "2061", "lowest.health < 40", "lowest" },
+	{ "2061", {
+		"lowest.debuff(6788)",
+		"lowest.health < 40",
+		"!lowest.buff(17)"
+	}, "lowest" },
 	--Greater Heal
-	--{ "2060", "lowest.health < 60", "lowest" },
+	{ "2060", { 
+		    "lowest.health < 50",
+	            "lowest.debuff(6788)",
+	            "!lowest.buff(17)"
+	}, "lowest" },
 	--PW:S Myself
 	{ "17", "!player.debuff(6788)", "player" },
 	--Archangel
@@ -63,9 +73,8 @@ ProbablyEngine.rotation.register_custom(256, "Discipline[Shadow]", {
 		"!lowest.buff(139)",
 		"!lowest.buff(17)"
 	}, "lowest" },
-	--Holy Fire / Solace
+	--Holy Fire
 	{ "14914", "lowest.health < 95", "target"},
-	{ "129250", "lowest.health < 95", "target" },
 	--Smite
 	{ "585", "lowest.health < 100", "target" },
 	{ "2050", "lowest.health < 95", "lowest" },
